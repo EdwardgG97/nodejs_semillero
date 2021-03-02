@@ -1,3 +1,17 @@
-¿Que es DEVOPS?
-Devops es una forma de organización o arquitectura donde se gestiona e integra todo lo relacionado con el 
+1. ¿Que es DEVOPS?
+
+RTA: Devops es una forma de organización o arquitectura donde se gestiona e integra todo lo relacionado con el 
 desarrollo de software.
+
+
+2. Ideas para generar más empatía, confianza y seguridad psicológica en el equipo.
+
+ Ideas para empatía:
+	* Incentivos de la empresa a nivel grupal, NO individual.
+
+ Ideas para confianza:
+	* Espacios para realizar ejercicios físicos donde se realicen diferentes retos en grupo.
+
+ Ideas seguridad psicológica:
+	* Espacios para compartir con los compañeros de trabajo las dificultades presentadas.
+
