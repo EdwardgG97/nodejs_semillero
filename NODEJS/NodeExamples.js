@@ -1,15 +1,15 @@
 class DefaultMap extends Map { //no Conozco la clase Map
 	
 	constructor(defaultValue) {
-		super();
+		super(); 
 		this.defaultValue = defaultValue;
 	}
 
-	get(key){
-		if (this.has(key)){
+	get(key) {
+		if (this.has(key)){ //desconozco la funcion has()
 			return super.get(key);
 		} else {
-			return this.defaultValue;		
+			return this.defaultValue;
 		}
 	}
 
@@ -48,7 +48,7 @@ class Histogram {
 		
 		entries = entries.filter(entry => entry[1]>= 1);
 		let lines = entries.map(
-				([l,n])=>`${l}: ${"#".repeat(Math.round(n))} ${n.toFixed(2)}%`);//no entiendo esta función del map
+				([l,n])=>`${l}: ${"#".repeat(Math.round(n))} ${n.toFixed(2)}%`);//no entiendo esta función del map / lambda
 		return lines.join("\n");
 	}
 
