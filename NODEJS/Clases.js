@@ -112,7 +112,7 @@ class Cuadrado {
 
 let cuadrado = Cuadrado.calcularCuadrado(4);
 console.log(cuadrado);
-console.log(Cuadrado.texto);
+console.log(Cuadrado.texto); //accedemos a variables estaticas de texto; no instanciamos para ver su valor.
 
 let cuadrado2 = new Cuadrado();
 console.log(cuadrado2.propiedadPrivada);
