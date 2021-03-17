@@ -1,3 +1,17 @@
+class WithOutNameError extends Error {
+
+    constructor(nombre, mensaje) {
+        super(`${nombre} ${mensaje}`);
+        this.nombre = nombre;
+        this.mensaje = mensaje;
+    }
+
+    get name() {
+        return "No has ingresado nombre de la función correcto, intente nuevamente! ";
+    }
+
+}
+
 class Util {
 
     constructor(nameFunction, valor1, valor2) {
@@ -9,32 +23,46 @@ class Util {
     }
 
     init(nameFunction, valor1, valor2) {
-        switch (nameFunction) {
-            case "Sumar":
-                console.log(calculadoraInit.sumar(valor1, valor2));
-                break;
-            case "Restar":
-                calculadoraInit.restar(valor1, valor2);
-                break;
-            case "Multiplicar":
-                calculadoraInit.multiplicar(valor1, valor2);
-                break;
-            case "Dividir":
-                calculadoraInit.dividir(valor1, valor2);
-                break;
-            case "URL":
-                this.datosURL(valor1);
-                break;
-            case "Dinero":
-                console.log(formatMoney.euro().format(valor1));
-                console.log(formatMoney.dolar().format(valor1));
-                console.log(formatMoney.yen().format(valor1));
-                console.log(formatMoney.pesoColombia().format(valor1));
-                break;
+        try {
+            switch (nameFunction) {
+                case "Sumar":
+                    console.log(calculadoraInit.sumar(valor1, valor2));
+                    break;
+                case "Restar":
+                    calculadoraInit.restar(valor1, valor2);
+                    break;
+                case "Multiplicar":
+                    calculadoraInit.multiplicar(valor1, valor2);
+                    break;
+                case "Dividir":
+                    calculadoraInit.dividir(valor1, valor2);
+                    break;
+                case "URL":
+                    this.datosURL(valor1);
+                    break;
+                case "Dinero":
+                    console.log(formatMoney.euro().format(valor1));
+                    console.log(formatMoney.dolar().format(valor1));
+                    console.log(formatMoney.yen().format(valor1));
+                    console.log(formatMoney.pesoColombia().format(valor1));
+                    break;
 
-            default:
-                console.log("N/A");
-                break;
+                case "ValidarEmail":
+                    if (/^[^@]+@[^@]+\.[a-zA-Z]{2,}$/.test(valor1)) {
+                        console.log("Email correcto");
+                    } else {
+                        console.log("Email incorrecto");
+                    }
+
+                    break;
+
+                default:
+                    console.log("N/A");
+                    throw new WithOutNameError("Out of range", "Index fuera de rango del array, valide nuevamente");
+                    break;
+            }
+        } catch (error) {
+            throw new WithOutNameError("Out of range", "Index fuera de rango del array, valide nuevamente");
         }
     }
 
@@ -50,6 +78,7 @@ class Util {
         console.log(url2.search);
         console.log(url2.hash);
     }
+
 
 }
 
@@ -95,3 +124,5 @@ const formatMoney = (function () {
 console.log(new Util("Sumar", 3, 4));
 console.log(new Util("URL", "https://example.com:8000/path/name?q=term#fragment"));
 console.log(new Util("Dinero", 10, null));
+console.log(new Util("ValidarEmail", "edgarcia@gmail.com", null));
+console.log(new Util("", null, null));
