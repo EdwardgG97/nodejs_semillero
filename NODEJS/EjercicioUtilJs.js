@@ -1,3 +1,10 @@
+/*
+* Clase Util donde recibe 3 parametros: Nombre de funcion a usar, valor para validar, valor para validar (opc)
+* Clase que podemos usar para realizar operaciones basicas que podemos usar a nivel general en una aplicación,
+* como operaciones matematicas, validación de email, datos recibidos de URL, datos de una fecha, etc.
+*/
+
+
 class WithOutNameError extends Error {
 
     constructor(nombre, mensaje) {
@@ -55,14 +62,20 @@ class Util {
                     }
 
                     break;
+                case "datosFecha":
+                    this.datosFecha(valor1);
+                    break;
+
+                case "Serializacion":
+                    break;
 
                 default:
                     console.log("N/A");
-                    throw new WithOutNameError("Out of range", "Index fuera de rango del array, valide nuevamente");
+                    throw new WithOutNameError("Sin Función", "No has ingresado nombre de la función correcto, intente nuevamente!");
                     break;
             }
         } catch (error) {
-            throw new WithOutNameError("Out of range", "Index fuera de rango del array, valide nuevamente");
+            throw new WithOutNameError("Sin Función", "No has ingresado nombre de la función correcto, intente nuevamente!");
         }
     }
 
@@ -77,6 +90,17 @@ class Util {
         console.log(url2.pathname);
         console.log(url2.search);
         console.log(url2.hash);
+    }
+
+    datosFecha(fecha) {
+        console.log(fecha.getDate());
+        console.log(fecha.getDay());
+        console.log(fecha.getFullYear());
+        console.log(fecha.getHours());
+        console.log(fecha.getMilliseconds());
+        console.log(fecha.getMinutes());
+        console.log(fecha.getMonth());
+        console.log(fecha.getSeconds());
     }
 
 
@@ -125,4 +149,6 @@ console.log(new Util("Sumar", 3, 4));
 console.log(new Util("URL", "https://example.com:8000/path/name?q=term#fragment"));
 console.log(new Util("Dinero", 10, null));
 console.log(new Util("ValidarEmail", "edgarcia@gmail.com", null));
+console.log(new Util("datosFecha", new Date(1997, 0, 12, 9, 45, 0), null));
 console.log(new Util("", null, null));
+
