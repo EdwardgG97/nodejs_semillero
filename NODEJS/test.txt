@@ -1,0 +1,6 @@
+Node.js fue creado por los desarrolladores originales de JavaScript. 
+Lo transformaron de algo que solo podía ejecutarse en el navegador en algo que se podría 
+ejecutar en los ordenadores como si de aplicaciones independientes se tratara. 
+Gracias a Node.js se puede ir un paso más allá en la programación con JavaScript no solo 
+creando sitios web interactivos, sino teniendo la capacidad de hacer cosas que otros lenguajes 
+de secuencia de comandos como Python pueden crear. 
