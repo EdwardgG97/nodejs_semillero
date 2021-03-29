@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clientes",
+  "info": {
+    "name": "clientes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Nombre": {
+      "type": "string"
+    },
+    "celular": {
+      "type": "integer"
+    }
+  }
+}
