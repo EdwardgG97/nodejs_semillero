@@ -1,8 +1,0 @@
-https://strapi.io/
-
-Resumen:
-1. Crear directorio de trabajo.
-2. Abrir una Terminar y escribir:
-
-* npx create-strapi-app my-project (llenar el formulario con los datos a usar)
-* npm run develop (ejecutar Strapi)
