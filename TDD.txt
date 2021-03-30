@@ -1,8 +1,19 @@
 Idea:
- * aplicación antirobo + Funda electrica para celular + gps  
+ * aplicación web - Asesoria legal de tramites.
 Descripción:
- *  Los robos de telefonos celulares ascienden a los 2500 diarios en Colombia, por lo que se necesita un sistema
-que me permita encontrar el telefono de forma rápida.
-La aplicación mantiene el monitoreo del telefono en cuanto al intento de acceso al información o aplicaciones del telefono,
-al validar los intentos fallidos de acceso, realizará descargas electricas a la funda del telefono y bloqueará el telefono.
-envia señales de localización de gps al correo y otras fuentes del dueño.  
+ *  Aplicación con inteligencia artificial que brinde asesoria y que conozca todas las intancias que tiene el estado 
+    para atender a los problemas civiles, categorizando las diferentes problematicas y brinde información de donde acudir
+    o la posible solución.
+
+
+Requerimiento 1:
+* Inteligencia artificial para respuestas inmediatas y precisas.
+
+Requerimiento 2:
+* Categorizar los módulos de consulta.
+
+Requerimiento 1:
+* Selección de la entidad.
+
+Requerimiento 3:
+* URLs, modulos de teléfonos, horarios de atención y ubicación.
