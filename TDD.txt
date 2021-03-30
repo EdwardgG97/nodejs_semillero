@@ -1,0 +1,8 @@
+Idea:
+ * aplicación antirobo + Funda electrica para celular + gps  
+Descripción:
+ *  Los robos de telefonos celulares ascienden a los 2500 diarios en Colombia, por lo que se necesita un sistema
+que me permita encontrar el telefono de forma rápida.
+La aplicación mantiene el monitoreo del telefono en cuanto al intento de acceso al información o aplicaciones del telefono,
+al validar los intentos fallidos de acceso, realizará descargas electricas a la funda del telefono y bloqueará el telefono.
+envia señales de localización de gps al correo y otras fuentes del dueño.  
