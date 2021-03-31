@@ -1,19 +1,25 @@
 Idea:
  * aplicación web - Asesoria legal de tramites.
 Descripción:
- *  Aplicación con inteligencia artificial que brinde asesoria y que conozca todas las intancias que tiene el estado 
-    para atender a los problemas civiles, categorizando las diferentes problematicas y brinde información de donde acudir
-    o la posible solución.
+ *  Aplicación de chat boot instantaneo que brinde asesoria y centralizando por categorias o módulos el acceso
+     a las intancias que tiene el estado, para atender a los problemas civiles las diferentes problematicas y 
+     brinde información de donde acudir con rutas URL, teléfonos y direcciones a donde poder acudir. 
 
 
-Requerimiento 1:
-* Inteligencia artificial para respuestas inmediatas y precisas.
-
+Requerimiento 1: "Chat Boot" - Inteligencia artificial para respuestas inmediatas y precisas.
+Especificacion:
+	* Brindar acceso rápido al chat boot para realizar consultas generales. 
+ 
 Requerimiento 2:
-* Categorizar los módulos de consulta.
-
-Requerimiento 1:
-* Selección de la entidad.
+* Obtener las categorias de las instancias del estado en menú lateral izquierdo.
+	1. Politico
+	2. Administrativo.
+	3. Judicial.
+	4. Social.
 
 Requerimiento 3:
-* URLs, modulos de teléfonos, horarios de atención y ubicación.
+* Obtener sublistas por problematicas a consultar, en las entidades del menú lateral.
+
+Requerimiento 4:
+* Centralizar en una base de datos los datos de acceso como URLs, modulos de teléfonos, horarios de atención y ubicación,
+ de cada sublista consultada.
