@@ -6,20 +6,22 @@ Descripción:
      brinde información de donde acudir con rutas URL, teléfonos y direcciones a donde poder acudir. 
 
 
-Requerimiento 1: "Chat Boot" - Inteligencia artificial para respuestas inmediatas y precisas.
+Requerimiento 1: "Chat Boot" - Para respuestas inmediatas y precisas.
 Especificacion:
 	* Obtener acceso al chat boot para realizar consultas generales. 
  
-Requerimiento 2:
+Requerimiento 2: Obtener las categorias de las instancias del estado.
 * Obtener las categorias de las instancias del estado en menú lateral izquierdo.
 	1. Politico
 	2. Administrativo.
 	3. Judicial.
 	4. Social.
+	5. Otros.
 
-Requerimiento 3:
-* Obtener sublistas por problematicas a consultar, en las entidades del menú lateral.
+Requerimiento 3: Sublistas
+Especificación:
+	* Obtener sublistas por problematicas a consultar, en las entidades del menú lateral.
 
-Requerimiento 4:
-* Crear en una base de datos los datos de acceso como URLs, modulos de teléfonos, horarios de atención y ubicación,
- de cada sublista consultada.
+Requerimiento 4: Base de datos
+Especificación:
+	* Crear en una base de datos los datos de acceso como URLs, modulos de teléfonos, horarios de atención y ubicación.
