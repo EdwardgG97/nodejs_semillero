@@ -1,4 +1,5 @@
 const axios = require('axios');
+
 const getData = (url) => {
     try {
         return axios.get(url);
