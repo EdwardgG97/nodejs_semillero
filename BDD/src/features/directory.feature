@@ -7,7 +7,7 @@ Feature: DirectoryService
     Scenario Outline: crear una entidad  
         Given una entidad <request> 
         When envio una solicitud POST a /directory
-        Then se guarda la entidad con respuesta 201  
+        Then se obtiene el codigo 201  
     
         Examples:
             | request                                                                                               |
@@ -35,8 +35,8 @@ Feature: DirectoryService
     Scenario Outline: eliminar una entidad
         Given un id de entidad <id> 
         When envio una solicitud DELETE a /directory
-        Then se obtiene una respuesta 201 <response>
+        Then se obtiene el codigo 200
     
        Examples:
-        | id | response
-        | 6  | {"id":6,"name":"Otros"} |
+        | id |
+        | 3  |

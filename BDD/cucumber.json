@@ -1,0 +1,720 @@
+[
+  {
+    "description": "    Para administrar el directorio \n    como desarrollador \n    quiero asegurarme que las operaciones crud a travez de las api rest funcionen bien",
+    "keyword": "Feature",
+    "name": "DirectoryService",
+    "line": 2,
+    "id": "directoryservice",
+    "tags": [
+      {
+        "name": "@directory-service",
+        "line": 1
+      }
+    ],
+    "uri": "src\\features\\directory.feature",
+    "elements": [
+      {
+        "id": "directoryservice;crear-una-entidad",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "crear una entidad",
+        "tags": [
+          {
+            "name": "@directory-service",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "una entidad {\"id\":1,\"name\":\"Politico\"}",
+            "match": {
+              "location": "src\\steps\\directory.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "envio una solicitud POST a /directory",
+            "match": {
+              "location": "src\\steps\\directory.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "se obtiene el codigo 201",
+            "match": {
+              "location": "src\\steps\\directory.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "directoryservice;crear-una-entidad",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "crear una entidad",
+        "tags": [
+          {
+            "name": "@directory-service",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "una entidad {\"id\":2,\"name\":\"Administrativo\"}",
+            "match": {
+              "location": "src\\steps\\directory.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "envio una solicitud POST a /directory",
+            "match": {
+              "location": "src\\steps\\directory.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "se obtiene el codigo 201",
+            "match": {
+              "location": "src\\steps\\directory.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "directoryservice;crear-una-entidad",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "crear una entidad",
+        "tags": [
+          {
+            "name": "@directory-service",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "una entidad {\"id\":3,\"name\":\"Judicial\"}",
+            "match": {
+              "location": "src\\steps\\directory.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "envio una solicitud POST a /directory",
+            "match": {
+              "location": "src\\steps\\directory.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "se obtiene el codigo 201",
+            "match": {
+              "location": "src\\steps\\directory.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "directoryservice;crear-una-entidad",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "crear una entidad",
+        "tags": [
+          {
+            "name": "@directory-service",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "una entidad {\"id\":4,\"name\":\"Social\"}",
+            "match": {
+              "location": "src\\steps\\directory.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "envio una solicitud POST a /directory",
+            "match": {
+              "location": "src\\steps\\directory.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "se obtiene el codigo 201",
+            "match": {
+              "location": "src\\steps\\directory.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "directoryservice;crear-una-entidad",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "crear una entidad",
+        "tags": [
+          {
+            "name": "@directory-service",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "una entidad {\"id\":5,\"name\":\"Movilidad\"}",
+            "match": {
+              "location": "src\\steps\\directory.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "envio una solicitud POST a /directory",
+            "match": {
+              "location": "src\\steps\\directory.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "se obtiene el codigo 201",
+            "match": {
+              "location": "src\\steps\\directory.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "directoryservice;crear-una-entidad",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "crear una entidad",
+        "tags": [
+          {
+            "name": "@directory-service",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "una entidad {\"id\":6,\"name\":\"Otros\"}",
+            "match": {
+              "location": "src\\steps\\directory.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "envio una solicitud POST a /directory",
+            "match": {
+              "location": "src\\steps\\directory.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "se obtiene el codigo 201",
+            "match": {
+              "location": "src\\steps\\directory.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "directoryservice;obtener-lista-de-entidades",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Obtener lista de entidades",
+        "tags": [
+          {
+            "name": "@directory-service",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "un id de entidad 1",
+            "match": {
+              "location": "src\\steps\\directory.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "envio una solicitud GET a /directory",
+            "match": {
+              "location": "src\\steps\\directory.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "se obtiene una respuesta {\"id\":1,\"name\":\"Politico\"}",
+            "match": {
+              "location": "src\\steps\\directory.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "directoryservice;obtener-lista-de-entidades",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Obtener lista de entidades",
+        "tags": [
+          {
+            "name": "@directory-service",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "un id de entidad 2",
+            "match": {
+              "location": "src\\steps\\directory.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "envio una solicitud GET a /directory",
+            "match": {
+              "location": "src\\steps\\directory.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "se obtiene una respuesta {\"id\":2,\"name\":\"Administrativo\"}",
+            "match": {
+              "location": "src\\steps\\directory.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "directoryservice;obtener-lista-de-entidades",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Obtener lista de entidades",
+        "tags": [
+          {
+            "name": "@directory-service",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "un id de entidad 3",
+            "match": {
+              "location": "src\\steps\\directory.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "envio una solicitud GET a /directory",
+            "match": {
+              "location": "src\\steps\\directory.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "se obtiene una respuesta {\"id\":3,\"name\":\"Judicial\"}",
+            "match": {
+              "location": "src\\steps\\directory.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "directoryservice;obtener-lista-de-entidades",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Obtener lista de entidades",
+        "tags": [
+          {
+            "name": "@directory-service",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "un id de entidad 4",
+            "match": {
+              "location": "src\\steps\\directory.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "envio una solicitud GET a /directory",
+            "match": {
+              "location": "src\\steps\\directory.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "se obtiene una respuesta {\"id\":4,\"name\":\"Social\"}",
+            "match": {
+              "location": "src\\steps\\directory.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "directoryservice;obtener-lista-de-entidades",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Obtener lista de entidades",
+        "tags": [
+          {
+            "name": "@directory-service",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "un id de entidad 5",
+            "match": {
+              "location": "src\\steps\\directory.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "envio una solicitud GET a /directory",
+            "match": {
+              "location": "src\\steps\\directory.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "se obtiene una respuesta {\"id\":5,\"name\":\"Movilidad\"}",
+            "match": {
+              "location": "src\\steps\\directory.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "directoryservice;obtener-lista-de-entidades",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Obtener lista de entidades",
+        "tags": [
+          {
+            "name": "@directory-service",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "un id de entidad 6",
+            "match": {
+              "location": "src\\steps\\directory.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "envio una solicitud GET a /directory",
+            "match": {
+              "location": "src\\steps\\directory.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "se obtiene una respuesta {\"id\":6,\"name\":\"Otros\"}",
+            "match": {
+              "location": "src\\steps\\directory.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "directoryservice;eliminar-una-entidad",
+        "keyword": "Scenario",
+        "line": 42,
+        "name": "eliminar una entidad",
+        "tags": [
+          {
+            "name": "@directory-service",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "un id de entidad 3",
+            "match": {
+              "location": "src\\steps\\directory.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "envio una solicitud DELETE a /directory",
+            "match": {
+              "location": "src\\steps\\directory.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "se obtiene el codigo 200",
+            "match": {
+              "location": "src\\steps\\directory.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
