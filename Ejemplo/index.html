@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TEST</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function get() {
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open("GET", 'http://localhost:1337/clientes', false); // false for synchronous request
+            xmlHttp.send(null);
+            document.getElementById('resultado').innerHTML = 'Resultado ' + xmlHttp.responseText;
+        }
+
+        function getb() {
+            console.log("GET");
+            let URL = 'http://localhost:1337/clientes';
+            $.get(URL, (res) => {
+                console.log(res);
+                document.getElementById('resultado').innerHTML = 'Resultado ' + res;
+            });
+        }
+    </script>
+    
+        <label>obtener información</label>
+        <button onclick="getb()">Guardar</button>
+        <textarea id="resultado"></textarea>
+
+
+</body>
+
+</html>
