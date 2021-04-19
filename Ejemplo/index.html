@@ -8,27 +8,69 @@
 
 <body>
     <script type="text/javascript">
+        let obj;
+
         function get() {
             var xmlHttp = new XMLHttpRequest();
-            xmlHttp.open("GET", 'http://localhost:1337/clientes', false); // false for synchronous request
+            xmlHttp.open("GET", 'http://localhost:1337/logins/2', false);
             xmlHttp.send(null);
+            console.log(xmlHttp.responseText);
+            obj = JSON.parse(xmlHttp.responseText);
+            console.log(obj.nombre_usuario);
             document.getElementById('resultado').innerHTML = 'Resultado ' + xmlHttp.responseText;
         }
-
-        function getb() {
-            console.log("GET");
-            let URL = 'http://localhost:1337/clientes';
-            $.get(URL, (res) => {
-                console.log(res);
-                document.getElementById('resultado').innerHTML = 'Resultado ' + res;
-            });
+        function delete1() {
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open("DELETE", 'http://localhost:1337/logins/5', false);
+            xmlHttp.send(null);
+            document.getElementById('resultado2').innerHTML = 'Delete Status Code: ' + xmlHttp.status;
         }
-    </script>
-    
-        <label>obtener información</label>
-        <button onclick="getb()">Guardar</button>
-        <textarea id="resultado"></textarea>
 
+
+        let objUp = {
+            ingresos_mensuales: 2577777,
+            ingresos_extra: 1577777,
+            patrimonio: 27777777
+        };
+
+        function actualizar() {
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open("PUT", 'http://localhost:1337/parametros/3', false);
+            xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xmlHttp.send(JSON.stringify(objUp));
+
+            document.getElementById('resultado3').innerHTML = 'Actualizar Registro Status Code: ' + xmlHttp.status;
+        }
+
+        let objUp1 = { nombre_usuario: "HHHHHHHH", contrasenia: "1234", email: "ehernando@gmail.com" };
+        let objUpP = { ingresos_mensuales: 2500000, ingresos_extra: 1500000, patrimonio: 25000000 };
+
+
+        function insertar() {
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open("POST", 'http://localhost:1337/parametros', false);
+            xmlHttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xmlHttp.send(JSON.stringify(objUpP));
+            document.getElementById('resultado4').innerHTML = 'Actualizar Registro Status Code: ' + xmlHttp.status;
+        }
+
+    </script>
+
+    <label>Obtener información</label>
+    <button onclick="get()">Obtener</button>
+    <textarea id="resultado"></textarea>
+
+    <label>Eliminar información</label>
+    <button onclick="delete1()">Eliminar</button>
+    <textarea id="resultado2"></textarea>
+
+    <label>Actualizar información</label>
+    <button onclick="actualizar()">Actualizar</button>
+    <textarea id="resultado3"></textarea>
+
+    <label>Insertar información</label>
+    <button onclick="insertar()">insertar</button>
+    <textarea id="resultado4"></textarea>
 
 </body>
 
